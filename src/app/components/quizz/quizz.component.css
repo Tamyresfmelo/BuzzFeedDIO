@@ -2,7 +2,6 @@
 width: 80%;
 margin: auto;
 margin-top: 20px;
-border : 1px solid #ccc;
 }
 
 .quizz_logo{
@@ -12,6 +11,8 @@ border : 1px solid #ccc;
   align-items: center;
   margin-bottom: 10px;
 }
+
+
 
 .quizz_logo > h3{
   margin-top: 20px;
@@ -35,6 +36,7 @@ border : 1px solid #ccc;
 .quizz_options{
   display: flex;
   flex-direction: wrap;
+  align-items: center;
   justify-content: center;
   margin: auto;
   margin-bottom: 20px;
