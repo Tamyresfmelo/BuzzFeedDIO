@@ -40,15 +40,19 @@ export class QuizzComponent implements OnInit {
 
 playerChoose(value: string){
   this.answers.push(value)
-  console.log(this.answers)
-  console.log("teste")
-  //this.questionIndex++
-  //this.questionsSelected = this.questions[this.questionIndex]
-  //this.answersSelected = ""
-  //if(this.questionIndex == this.questionMaxIndex){
-  //  this.finished = true
-  //}
+  this.nextQuestion()
+
 }
 
+nextQuestion(){
+  this.questionIndex += 1
 
+  if(this.questionMaxIndex > this.questionIndex){
+    this.questionsSelected = this.questions[this.questionIndex]
+  }else{
+    this.finished = true
+
+  }
+
+}
 }
